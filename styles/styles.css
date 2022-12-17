@@ -171,6 +171,17 @@ body {
     padding-bottom: 192px;
 }
 
+.overlay {
+    max-width: 1440px;
+    height: 603px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(46,47,66, 0.7), rgba(46,47,66, 0.8)), url('../img/hero-bckg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .hero-title {
     margin-top: 0px;
     margin-bottom: 48px;
@@ -238,6 +249,16 @@ body {
     margin-left: var(--card-set-gorizontal-gap);
 }
 
+.features-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background-color: var(--second-white-color);
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
 
 
 .features .subtitle {
@@ -271,6 +292,11 @@ body {
 
 .work .work-item + .work-item {
     margin-left: 24px;
+}
+
+.work-item:hover {
+    border: 1px solid #E7E9FC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Section */
@@ -468,4 +494,11 @@ body {
     padding: 32px 16px;
     border: 0.5px solid var(--second-white-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portf-item:hover{
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
