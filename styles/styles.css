@@ -294,10 +294,10 @@ body {
     margin-left: 24px;
 }
 
-.work-item:hover {
-    border: 1px solid #E7E9FC;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.work-item {
+    border: none;
 }
+
 
 /* Section */
 .section-title {
@@ -356,15 +356,99 @@ body {
 
 .about-team .position {
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 8px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
 }
 
+.team-social-list {
+    display: flex;
+}
+
+.team-social-item {
+    margin-left: 24px;
+}
+
+.team-social-item:first-child {
+    margin-left: 0px;
+}
+
+.team-social-link {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.team-social-icon {
+    height: 16px;
+    width: 16px;
+}
+
+.team-social-link:hover {
+    background-color: var(--button-animation-color);
+}
+
 .bckg {
     background-color: var(--second-white-color);
+}
+
+
+/* ===========Customers========= */
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+}
+
+.customers-item {
+    margin-left: 24px;
+}
+
+.customers-item:first-child {
+    margin-left: 0px;
+}
+
+.customers-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.customers-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
+    width: 168px;
+    padding: 16px 32px;
+    color: #8E8F99;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
+.customers-link:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.customers-icon {
+    fill: currentColor;
+}
+
+
+.customers-title {
+    margin-top: 0px;
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 /* Footer */
@@ -440,7 +524,7 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     color: var(--primary-white-color);
-    border: 1px solid #000000;
+    border: 1px solid #4D5AE5;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -497,7 +581,6 @@ body {
 }
 
 .portf-item:hover{
-    border: 0.5px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
