@@ -249,7 +249,7 @@ body {
     margin-left: var(--card-set-gorizontal-gap);
 }
 
-.features-icon {
+.features-icons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -260,6 +260,10 @@ body {
     border-radius: 4px;
 }
 
+.features-icon {
+    width: 64px;
+    height: 64px;
+}
 
 .features .subtitle {
     margin-top: 0px;
@@ -365,6 +369,7 @@ body {
 
 .team-social-list {
     display: flex;
+    justify-content: space-between;
 }
 
 .team-social-item {
@@ -453,13 +458,59 @@ body {
 
 /* Footer */
 
+.footer-container {
+    display: flex;
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-social-item {
+    margin-left: 24px;
+}
+
+.footer-social-item:first-child {
+    margin-left: 0px;
+}
+
+.footer-social-link {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-icon {
+    height: 16px;
+    width: 16px;
+}
+
+.footer-social-link:hover {
+    background: #31D0AA;
+}
+
+.footer-social-icon {
+    fill: currentColor;
+}
+/* ///////// */
+
+.footer-about {
+    margin-right: 120px;
+}
+
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--title-text-color);
+    display: flex;
 }
 
-.footer .footer-text {
+.footer-text {
+    width: 264px;
     margin-top: 16px;
     margin-bottom: 0px;
     color: #E7E9FC;
@@ -467,6 +518,19 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+
+.footer-title {
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-white-color);
+}
+
+
 
 /* ------------------------------------------- */
 /* ---------------Portfolio------------------- */
@@ -490,8 +554,6 @@ body {
 .nav-item:first-child {
     margin-left: 0px;
 }
-
-/* Portfolio focus/hover ????*/
 
 .portfolio .title:hover,
 .title:focus {
